@@ -16,7 +16,7 @@ const developer = process.env.USERNAME_DEVELOPER
 
 // app.get('/home', (req, res) => {
 app.get('/', (req, res) => {
-  res.status(200).json('Welcome, your app is working well at: '+ port + ', Developed by: '+ developer) + ' other User is: '+  process.env.USERNAME_DB + '  '+  process.env.PASSWORD_DB ;
+  res.status(200).json('Welcome, your app is working well at: '+ port + ', Developed by: '+ developer + ' and other User is: '+  process.env.USERNAME_DB + '  '+  process.env.PASSWORD_DB );
 })
 
 app.listen(port, () => {
