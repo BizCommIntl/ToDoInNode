@@ -12,11 +12,11 @@ const app = express()
 
 const port = process.env.PORT || 4000;
 
-
+const developer = process.env.USERNAME_DEVELOPER
 
 // app.get('/home', (req, res) => {
 app.get('/', (req, res) => {
-  res.status(200).json('Welcome, your app is working well, Developed by: '+ process.env.USERNAME_DEVELOPER);
+  res.status(200).json('Welcome, your app is working well at: '+ port + ', Developed by: '+ developer);
 })
 
 
